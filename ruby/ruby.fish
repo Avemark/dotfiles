@@ -1,4 +1,4 @@
-status --is-interactive; and . (rbenv init -|psub)
+. (rbenv init -|psub)
 
 alias rspec='noglob rspec '
 
