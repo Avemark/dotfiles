@@ -1,5 +1,3 @@
-. (rbenv init -|psub)
-
 alias rspec='noglob rspec '
 
 if command -v bundle > /dev/null

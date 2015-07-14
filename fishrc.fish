@@ -1,4 +1,6 @@
-set -x PATH ./.git/safe/../../bin/ $HOME/.rbenv/bin $PATH
+set -x PATH $HOME/.rbenv/bin $PATH
+. (rbenv init -|psub)
+set -x PATH ./.git/safe/../../bin/ $PATH
 
 source ~/.git/git.fish
 source ~/.prompt/prompt.fish
