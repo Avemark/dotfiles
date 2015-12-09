@@ -1,14 +1,12 @@
-alias rspec='noglob rspec '
-
 if command -v bundle > /dev/null
-  alias rbb='bundle'
-  alias rbbe='bundle exec'
-  alias rbbi='bundle install --path vendor/bundle'
-  alias rbbl='bundle list'
-  alias rbbo='bundle open'
-  alias rbbp='bundle package'
-  alias rbbu='bundle update'
-  alias rbbI='rbbi \
+  abbr rbb='bundle'
+  abbr rbbe='bundle exec'
+  abbr rbbi='bundle install --path vendor/bundle'
+  abbr rbbl='bundle list'
+  abbr rbbo='bundle open'
+  abbr rbbp='bundle package'
+  abbr rbbu='bundle update'
+  abbr rbbI='rbbi \
     ; bundle package \
     ; print .bundle       >>! .gitignore \
     ; print vendor/assets >>! .gitignore \

@@ -14,9 +14,8 @@ set __fish_git_prompt_color_branch yellow
 
 # Status Chars
 set __fish_git_prompt_color_prefix cyan
-set __fish_git_prompt_color_suffix cyan
-set __fish_git_prompt_char_dirtystate 'm'
-set __fish_git_prompt_color_dirtystate yellow
+set __fish_git_prompt_char_dirtystate 'M'
+set __fish_git_prompt_color_dirtystate red
 set __fish_git_prompt_char_stagedstate 'a'
 set __fish_git_prompt_color_stagedstate green
 set __fish_git_prompt_char_untrackedfiles '?'
@@ -26,9 +25,11 @@ set __fish_git_prompt_color_stashstate magenta
 set __fish_git_prompt_char_upstream_ahead ' ▲'
 set __fish_git_prompt_color_upstream_ahead green
 set __fish_git_prompt_char_upstream_behind ' ▼'
-set __fish_git_prompt_color_upstream_behind red
+set __fish_git_prompt_color_upstream_behind yellow
 set __fish_git_prompt_char_upstream_equal ' ='
 set __fish_git_prompt_color_upstream_equal green
+set __fish_git_prompt_char_upstream_diverged ' ⧎'
+set __fish_git_prompt_color_upstream_diverged red
 
 
 function fish_prompt
@@ -36,15 +37,15 @@ function fish_prompt
 
   set_color $fish_color_cwd
   printf '%s' (prompt_pwd)
-  set_color normal
+  set_color blue
 
-  printf '%s%s ' (__fish_git_prompt " ⦗%s⦘") "$red❯$yellow❯$green❯"
+  printf '%s ' "$red❯$yellow❯$green❯"
 
   set_color normal
 end
 
 function fish_right_prompt -d "print right hand prompt"
-	#printf "%s" (__fish_git_prompt)
+	printf "%s" (__fish_git_prompt " git:%s")
 end
 
 #  memo: ❰❱ ❬ ❭ ❮ ❯ ❯❯❯ ⧎ ⦗ ⦘「 」 『 』
