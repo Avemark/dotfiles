@@ -163,16 +163,14 @@ bar {
 }
 
 # rofi
-bindsym Control+space exec "rofi -modi run,ssh -show run -lines 5 -terminal terminology"
+bindsym Control+space exec "rofi -modi run,ssh -show run -lines 5 -terminal urxvt"
 bindsym Mod1+space exec "rofi -show window"
 
 # prettier
 
-new_window none
+new_window pixel 1
 
 # Media keys
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10 -time 50
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10 -time 50
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 3%+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 3%- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
@@ -186,5 +184,6 @@ bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer
 # ipc communications
 ipc-socket /tmp/i3-ipc.sock
 
-exec --no-startup-id gnome-settings-daemon
-exec --no-startup-id compton --opacity-rule '100:window_type = "dock" && class_g = "i3bar"'
+exec --no-startup-id feh --bg-fill ~/Pictures/bg/skull.jpg
+# exec --no-startup-id gnome-settings-daemon
+exec --no-startup-id compton --config ~/.compton/compton.conf
