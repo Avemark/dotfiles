@@ -159,7 +159,8 @@ bar {
                 inactive_workspace #333333 #222222 #888888
                 urgent_workspace   #2f343a #900000 #ffffff
             }
-        status_command i3status --config ~/.i3/status.conf
+        #status_command i3status --config ~/.i3/status.conf
+        status_command i3blocks
 }
 
 # rofi
