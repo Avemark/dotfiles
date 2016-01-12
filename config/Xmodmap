@@ -1,0 +1,3 @@
+!Turn Caps_Lock into a generic launch key
+remove Lock = Caps_Lock
+keysym Caps_Lock = XF86Launch1

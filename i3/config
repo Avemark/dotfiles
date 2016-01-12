@@ -182,6 +182,9 @@ bindsym XF86AudioStop exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer
 bindsym XF86AudioPrev exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
 bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
 
+# Xmodmap
+bindsym XF86Launch1 exec ~/.bin/swap_keyboard_mapping.rb
+exec --no-startup-id xmodmap ~/.config/Xmodmap
 # ipc communications
 ipc-socket /tmp/i3-ipc.sock
 
