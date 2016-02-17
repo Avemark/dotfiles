@@ -1,0 +1,2 @@
+ATTRS{idVendor}=="1532", ATTRS{idProduct}=="011c"
+ACTION=="add", RUN+="/home/christian/.bin/keyboard_udev"

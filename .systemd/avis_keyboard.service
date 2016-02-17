@@ -1,0 +1,5 @@
+[Unit]
+Description=Swap keyboard layout
+
+[Service]
+ExecStart=/home/christian/.bin/swap_keyboard_mapping

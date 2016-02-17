@@ -20,3 +20,5 @@ Intended for use with ThoughtBot's [rcm](https://github.com/thoughtbot/rcm)
 expected utility applications:
 amixer (deb package alsa-utils)
 feh
+
+.misc/xkb_symbols_se_colemak is an addition meant for /usr/share/X11/xkb/symbols/se that includes my colemak keymap
