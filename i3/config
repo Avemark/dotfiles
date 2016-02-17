@@ -184,7 +184,6 @@ bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer
 
 # Xmodmap
 bindsym XF86Launch1 exec ~/.bin/swap_keyboard_mapping.rb
-exec_always --no-startup-id xmodmap ~/.config/Xmodmap
 # ipc communications
 ipc-socket /tmp/i3-ipc.sock
 
