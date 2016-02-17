@@ -18,7 +18,7 @@ end
 def notify
   img = File.join File.dirname(__FILE__), 'keyboard.png'
   img_opt = File.file?(img) ? " -i #{img}" : ''
-  `notify-send#{img_opt} "Keyboard recognized" "Layout set to colemak"`
+  `notify-send#{img_opt} "Razer" "Keyboard recognized\nLayout set to colemak"`
 end
 
 def set_to_colemak
