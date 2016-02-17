@@ -24,7 +24,8 @@ end
 
 def set_to_colemak
   @input_ids.each do |id|
-    `setxkbmap -device "#{id}" se colemak`
+    `setxkbmap -device "#{id}" se colemak -option caps:backspace`
+    `xset r 66`
     notify
   end
 end
