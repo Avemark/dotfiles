@@ -15,10 +15,11 @@ def set_env
   end
 end
 
-def notify
+def notify(msg = nil)
   img = File.join File.dirname(__FILE__), 'keyboard.png'
   img_opt = File.file?(img) ? " -i #{img}" : ''
-  `notify-send#{img_opt} "Razer" "Keyboard recognized\nLayout set to colemak"`
+  msg ||= "Keyboard recognized\nLayout set to colemak"
+  `notify-send#{img_opt} "Razer" "#{msg}"`
 end
 
 def set_to_colemak

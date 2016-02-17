@@ -4,6 +4,13 @@ URxvt*scrollBar: false
 urxvt*foreground: white
 URxvt*mouseWheelScrollPage: true
 URxvt*cursorBlink: true
+urxvt*perl-ext:        default,matcher
+urxvt*url-launcher:        /usr/bin/chromium
+URxvt.matcher.button: 1
+URxvt.matcher.pattern.1: (?:\\s)([\\~]?\\/\{1,1\}[\\.\\w]\\S+)\\b
+URxvt.matcher.launcher.1: subl $1
+URxvt.matcher.rend.1: fg16
+
 
 URxvt*depth:	32
 URxvt*background: [80]#303030
@@ -12,7 +19,7 @@ URxvt*foreground: #dcdccc
 URxvt*cursorColor: #aaaaaa
 URxvt*colorUL: #366060
 URxvt*underlineColor: #dfaf8f
-URxvt*color0: #3f3f3f
+URxvt*color0: #7f5f7f
 URxvt*color1: #cc9393
 URxvt*color2: #7f9f7f
 URxvt*color3: #d0bf8f
@@ -20,7 +27,7 @@ URxvt*color4: #6ca0a3
 URxvt*color5: #dc8cc3
 URxvt*color6: #93e0e3
 URxvt*color7: #dcdccc
-URxvt*color8: #000000
+URxvt*color8: #998999
 URxvt*color9: #dca3a3
 URxvt*color10: #bfebbf
 URxvt*color11: #f0dfaf
