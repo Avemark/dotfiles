@@ -1,2 +1,3 @@
 #!/bin/sh
+touch /tmp/test
 /usr/sbin/service avis_keyboard start

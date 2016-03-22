@@ -37,13 +37,13 @@ def set_inputs
 end
 
 set_env
-3.times do
+5.times do
   set_inputs
   if @input_ids.count > 0
     set_to_colemak
     break
   else
-    notify "faaail"
+    notify "examining keyboard ..."
   end
   sleep 1
 end
