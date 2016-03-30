@@ -7,9 +7,9 @@ URxvt*cursorBlink: true
 urxvt*perl-ext:        default,matcher
 urxvt*url-launcher:        /usr/bin/chromium
 URxvt.matcher.button: 1
-URxvt.matcher.pattern.1: (?:\\s)([\\~]?\\/\{1,1\}[\\.\\w]\\S+)\\b
+URxvt.matcher.pattern.1: ([\\~]?\\/\{1,1\}[\\/-_\\w]+)\\Z
 URxvt.matcher.launcher.1: subl $1
-URxvt.matcher.rend.1: fg16
+URxvt.matcher.rend.1: Uline fg16
 
 
 URxvt*depth:	32
