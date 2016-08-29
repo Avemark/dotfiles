@@ -9,7 +9,6 @@ Opinionated and largely clueless dotfiles with some setup for the following thin
 * ruby/rbenv
 * autojump
 * compton
-* urxvt
 * rofi
 * spotify
 
