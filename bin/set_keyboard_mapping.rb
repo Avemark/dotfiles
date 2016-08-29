@@ -1,3 +1,4 @@
+
 #! /home/christian/.rbenv/shims/ruby
 
 # Script to set my Razer keyboard layout to colemak without changing the laptop keyboard
@@ -26,20 +27,21 @@ def set_to_colemak
   @input_ids.each do |id|
     `setxkbmap -device "#{id}" se colemak -option caps:backspace`
     `xset r 66`
-    notify
   end
+  notify
 end
 
 def set_inputs
-  @input_ids = [
-    `xinput -list | grep Razer | grep keyboard | cut -d "=" -f 2 | cut -f 1`.chomp
-  ].reject { |s| s.size < 1}
+  @input_ids = `xinput -list | grep Razer | grep keyboard | cut -d "=" -f 2 | cut -f 1`.
+    split("\n").
+    map(&:chomp).
+    reject { |s| s.size < 1}
 end
 
 set_env
 5.times do
   set_inputs
-  if @input_ids.count > 0
+  if @input_ids.count > 1
     set_to_colemak
     break
   else
