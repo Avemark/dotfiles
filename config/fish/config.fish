@@ -6,8 +6,11 @@ end
 set -x PATH ./.git/safe/../../bin $PATH
 set -x PATH $HOME/.bin $PATH
 
-source ~/.config/fish/prompt/prompt.fish
+if test -e /usr/share/autojump/autojump.fish
+	source /usr/share/autojump/autojump.fish
+end
 
-source /usr/share/autojump/autojump.fish
+source ~/.config/fish/prompt/prompt.fish
+source ~/.config/fish/git/git.fish
 
 set fish_greeting
