@@ -1,1 +1,1 @@
-EXCLUDES="README.md setup.sh"
+EXCLUDES="README.md setup.fish"
