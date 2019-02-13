@@ -15,7 +15,6 @@
 		"Elixir",
 		"ElixirSublime",
 		"Extract Sublime Package",
-		"fish-shell",
 		"Git",
 		"Git Conflict Resolver",
 		"GitGutter",
@@ -29,6 +28,7 @@
 		"SublimeLinter",
 		"SublimeLinter-contrib-reek",
 		"SublimeLinter-rubocop",
-		"TrailingSpaces"
+		"TrailingSpaces",
+		"fish"
 	]
 }

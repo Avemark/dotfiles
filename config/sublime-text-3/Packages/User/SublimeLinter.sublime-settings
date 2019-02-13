@@ -1,57 +1,73 @@
 {
-    "user": {
-        "debug": false,
-        "delay": 0.25,
-        "error_color": "D02000",
-        "gutter_theme": "none",
-        "gutter_theme_excludes": [],
-        "lint_mode": "background",
-        "linters": {
-            "elixirlinter": {
-                "@disable": true,
-                "args": [],
-                "excludes": []
-            },
-            "reek": {
-                "@disable": false,
-                "args": [],
-                "excludes": []
-            },
-            "rubocop": {
-                "@disable": false,
-                "args": [
-                    "-R"
-                ],
-                "excludes": []
-            }
+    "debug": false,
+    "delay": 0.25,
+    "gutter_theme": "none",
+    "lint_mode": "background",
+    "linters": {
+        "elixirlinter": {
+            "@disable": true,
+            "args": [],
+            "excludes": []
         },
-        "mark_style": "solid underline",
-        "no_column_highlights_line": false,
-        "passive_warnings": false,
-        "paths": {
-            "linux": [
-                "~/.rbenv/shims"
+        "reek": {
+            "@disable": false,
+            "args": [],
+            "excludes": []
+        },
+        "rubocop": {
+            "@disable": false,
+            "args": [
+                "-R"
             ],
-            "osx": [],
-            "windows": []
+            "excludes": []
+        }
+    },
+    "no_column_highlights_line": false,
+    "paths": {
+        "linux": [
+            "~/.rbenv/shims"
+        ],
+        "osx": [],
+        "windows": []
+    },
+    "show_marks_in_minimap": true,
+    "syntax_map": {
+        "html (django)": "html",
+        "html (rails)": "html",
+        "html 5": "html",
+        "php": "html",
+        "python django": "python"
+    },
+    "styles": [
+        {
+            // Determines, for overlapping errors, which one is visualised.
+            "priority": 1,
+
+            // The icon displayed in the gutter area
+            // - "circle", "dot" or "bookmark"
+            // - "none" to remove the icon
+            // - A path to an icon file like
+            //   "Packages/SublimeLinter/gutter-themes/Blueberry Cross/error.png"
+            // - One provided by a gutter theme (e.g. "warning" or "error").
+            //   In theme Default: warning, error, cog, x,
+            //   and diamond, heart, pointer, square, star, triangle, which all
+            //   also have an -outline variant.
+            "icon": "dot"
+,
+            // The highlight style:
+            // - "none"
+            // - "fill", "outline",
+            // - "solid_underline", "squiggly_underline", "stippled_underline"
+            // The underline styles are replaced with outlines when there is
+            // whitespace in the problem region, because underlines aren't drawn
+            // on whitespace (ST issue #137).
+            "mark_style": "solid_underline",
+
+            "scope": "region.redish markup.error.sublime_linter"
         },
-        "python_paths": {
-            "linux": [],
-            "osx": [],
-            "windows": []
-        },
-        "rc_search_limit": 3,
-        "shell_timeout": 10,
-        "show_errors_on_save": false,
-        "show_marks_in_minimap": true,
-        "syntax_map": {
-            "html (django)": "html",
-            "html (rails)": "html",
-            "html 5": "html",
-            "php": "html",
-            "python django": "python"
-        },
-        "warning_color": "DDB700",
-        "wrap_find": true
-    }
+    ],
+    "wrap_find": true,
+    "highlights.demote_while_editing": "all",
+    "no_column_highlights_line": true,
+
 }
