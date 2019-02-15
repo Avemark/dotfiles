@@ -11,3 +11,8 @@ if not test -e /usr/share/autojump/autojump.fish
 	echo "installing autojump"
 	pacman -S autojump --noconfirm
 end
+
+if not test -e /etc/fonts/conf.avail/*-ttf-inconsolata.conf
+	echo "installing inconsolata font"
+	pacman -S ttf-inconsolata --noconfirm
+end
