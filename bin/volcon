@@ -1,0 +1,32 @@
+#!/bin/sh
+
+sink=$(pactl list short sinks | grep a2dp | cut -f1 | grep -E .+ || pactl list short sinks | head -n 1 | cut -f1)
+
+case $1 in
+up)
+	change='+3%'
+	;;
+down)
+	change='-3%'
+	;;
+mute)
+	for any_sink in $(pactl list short sinks | cut -f1)
+	do
+		pactl set-sink-mute $any_sink toggle
+	done
+	exit 0
+	;;
+mute-mic)
+	for any_source in $(pactl list short sources | cut -f1)
+	do
+		pactl set-source-mute $any_source toggle
+	done
+	exit 0
+	;;
+*)
+	echo 'Unknown command'
+	exit 1
+	;;
+esac
+
+pactl set-sink-volume $sink $change

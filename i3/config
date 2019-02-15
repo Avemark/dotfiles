@@ -171,16 +171,11 @@ bindsym Mod1+space exec "rofi -show window"
 
 new_window pixel 1
 
-
-# Pulse Audio controls
-#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-#bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
-#bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 # Media keys
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 3%+ unmute
-bindsym XF86AudioLowerVolume exec amixer -q set Master 3%- unmute
-bindsym XF86AudioMute exec amixer -q set Master toggle
-bindsym XF86AudioMicMute exec amixer -q set Capture toggle
+bindsym XF86AudioRaiseVolume exec ~/.bin/volcon up
+bindsym XF86AudioLowerVolume exec ~/.bin/volcon down
+bindsym XF86AudioMute exec ~/.bin/volcon mute
+bindsym XF86AudioMicMute exec ~/.bin/volcon mute-mic
 
 bindsym XF86AudioPlay exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
 bindsym XF86AudioStop exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop"
