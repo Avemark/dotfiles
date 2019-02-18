@@ -171,6 +171,8 @@ bindsym Mod1+space exec "rofi -show window"
 
 new_window pixel 1
 
+bindsym --release $mod+Control+5 exec scrot -sze 'nomacs $f' ~/images/screenshots/scrot-%y-%m-%d-%H:%M.png
+
 # Media keys
 bindsym XF86AudioRaiseVolume exec ~/.bin/volcon up
 bindsym XF86AudioLowerVolume exec ~/.bin/volcon down
