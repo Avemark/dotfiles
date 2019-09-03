@@ -37,7 +37,12 @@ if not test -e /usr/share/icons/Flat-Remix-Red/index.theme
 	yay -S flat-remix --noconfirm
 end
 
+if not type -q vim
+	echo "installing vim"
+	yay -S vim --noconfirm
+end
+
 if not type -q dunst
 	echo "installing dunst"
-	yay -QS dunst --noconfirm
+	yay -S dunst --noconfirm
 end
