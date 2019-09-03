@@ -8,7 +8,7 @@
 	"ensure_newline_at_eof_on_save": true,
 	"extract_sublime_package_ask_on_open": true,
 	"font_face": "Inconsolata",
-	"font_size": 8,
+	"font_size": 13,
 	"hot_exit": false,
 	"ignored_packages":
 	[
@@ -22,6 +22,12 @@
 	"index_files": true,
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
+	"match_brackets": false,
+	"match_brackets_angle": false,
+	"match_brackets_braces": false,
+	"match_brackets_content": false,
+	"match_brackets_square": false,
+	"match_tags": false,
 	"material_theme_accent_lime": false,
 	"material_theme_accent_orange": false,
 	"material_theme_accent_purple": true,

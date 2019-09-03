@@ -187,12 +187,12 @@ bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer
 # ipc communications
 ipc-socket /tmp/i3-ipc.sock
 
-exec --no-startup-id feh --bg-fill ~/pictures/jupiter.jpg
+exec --no-startup-id feh --bg-fill ~/images/moon.jpg
 # exec --no-startup-id gnome-settings-daemon
 exec --no-startup-id compton -bd :0 --no-startup-id --config ~/.compton/compton.conf
 
 exec --no-startup-id xss-lock -- i3lock -nec 000000
 exec --no-startup-id xautolock -time 15 -locker "i3lock -nec 000000" -corners '+00-'
 
-exec --no-startup-id "setxkbmap -layout us,de"
-exec --no-startup-id "setxkbmap -option 'grp:alt_shift_toggle'"
+exec --no-startup-id pasystray
+exec --no-startup-id dunst
