@@ -16,3 +16,28 @@ if not test -e /etc/fonts/conf.avail/*-ttf-inconsolata.conf
 	echo "installing inconsolata font"
 	pacman -S ttf-inconsolata --noconfirm
 end
+
+if not type -q git
+	echo "installing git"
+	pacman -S git --noconfirm
+end
+
+# untested, fix when running on next machine without yay
+if not type -q yay
+	echo "installing yay AUR helper"
+	git clone https://aur.archlinux.org/yay/yay.git
+	cd yay
+	makepkg -si
+	cd ..
+	rm -rf yay
+end
+
+if not test -e /usr/share/icons/Flat-Remix-Red/index.theme
+	echo "installing flat-remix icon package"
+	yay -S flat-remix --noconfirm
+end
+
+if not type -q dunst
+	echo "installing dunst"
+	yay -QS dunst --noconfirm
+end
