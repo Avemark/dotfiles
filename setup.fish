@@ -46,3 +46,8 @@ if not type -q dunst
 	echo "installing dunst"
 	yay -S dunst --noconfirm
 end
+
+if not type -q blueman-manager
+	echo "installing blueman manager"
+	yay -S blueman --noconfirm
+end
