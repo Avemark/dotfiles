@@ -1,6 +1,6 @@
 # aliases!
 
-if status --is-interactive && abbr -l | grep gco > /dev/null
+if status --is-interactive && ! abbr -l | grep gco > /dev/null
 	# Branch (b)
 	abbr --add --universal gb 'git branch'
 	abbr --add --universal gbc 'git checkout -b'

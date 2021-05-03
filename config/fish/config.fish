@@ -6,6 +6,8 @@ end
 set -x PATH ./.git/safe/../../bin $PATH
 set -x PATH $HOME/.bin $PATH
 
+set -x ANDROID_HOME /usr/lib/android-sdk
+
 if test -e /usr/share/autojump/autojump.fish
 	source /usr/share/autojump/autojump.fish
 end
