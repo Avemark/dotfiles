@@ -5,4 +5,4 @@ depends = ["starship"]
 fish = "~/.config/fish"
 
 [starship.files]
-starship.toml = "~/.config/starship.toml"
+"starship.toml" = "~/.config/starship.toml"
