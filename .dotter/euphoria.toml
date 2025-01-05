@@ -1,1 +1,8 @@
-packages = ["fish"]
+packages = ["fish", "hyprland"]
+
+[variables]
+wallpaper = "~/Images/columns.jpg"
+laptop = false
+
+[files]
+"euphoria/monitor.conf" = "~/.config/hypr/conf/monitor.conf"

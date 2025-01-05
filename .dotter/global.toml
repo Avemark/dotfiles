@@ -6,3 +6,12 @@ fish = "~/.config/fish"
 
 [starship.files]
 "starship.toml" = "~/.config/starship.toml"
+
+[hyprland]
+depends = ["tofi"]
+
+[hyprland.files]
+hyprland = "~/.config/hypr"
+
+[tofi.files]
+tofi = "~/.config/tofi/config"
