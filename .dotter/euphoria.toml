@@ -6,3 +6,4 @@ laptop = false
 
 [files]
 "euphoria/monitor.conf" = "~/.config/hypr/conf/monitor.conf"
+"euphoria/hyprpaper.conf" = "~/.config/hypr/hyprpaper.conf"

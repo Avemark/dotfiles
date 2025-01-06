@@ -8,10 +8,17 @@ fish = "~/.config/fish"
 "starship.toml" = "~/.config/starship.toml"
 
 [hyprland]
-depends = ["tofi"]
+depends = ["tofi", "waybar"]
 
 [hyprland.files]
 hyprland = "~/.config/hypr"
 
 [tofi.files]
 tofi = "~/.config/tofi/config"
+
+[waybar.files]
+waybar = "~/.config/waybar"
+
+[waybar.variables]
+laptop = false
+
