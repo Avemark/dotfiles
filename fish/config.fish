@@ -10,3 +10,4 @@ end
 type -q starship; and starship init fish | source
 
 set fish_greeting
+set -x EDITOR vim
