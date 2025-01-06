@@ -1,0 +1,4 @@
+#!/bin/sh
+# Xsetup - run as root before the login dialog appears
+xrandr --output HDMI-1 --brightness 0
+xrandr --output HDMI-A-0 --brightness 0
