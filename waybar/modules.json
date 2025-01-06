@@ -13,16 +13,13 @@
     "hyprland/workspaces" : {
         "on-click": "activate",
         "active-only": false,
-        "all-outputs": true,
+        "all-outputs": false,
         "format": "{}",
         "format-icons": {
 			"urgent": "",
 			"active": "",
 			"default": ""
         },
-        "persistent-workspaces": {
-             "*": 5
-        }       
     },
 
     // Power Menu
@@ -46,8 +43,6 @@
         "format-alt": "{:%Y-%m-%d}"
     },
 
-    
-    {{ #if laptop }}
     "battery": {
         "states": {
             "warning": 30,
@@ -61,8 +56,6 @@
         // "format-full": "",
         "format-icons": [" ", " ", " ", " ", " "]
     },
-
-    {{ /if }}
 
     // Pulseaudio
     "pulseaudio": {
@@ -99,8 +92,8 @@
         "format": "{icon}",
         "tooltip": true,
         "format-icons":{
-            "activated": "",
-            "deactivated": ""
+            "deactivated": "",
+            "activated": ""
         },
         "on-click-right": "hyprlock"        
     }

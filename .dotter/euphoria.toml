@@ -1,7 +1,6 @@
 packages = ["fish", "hyprland"]
 
 [variables]
-wallpaper = "~/Images/columns.jpg"
 laptop = false
 
 [files]
