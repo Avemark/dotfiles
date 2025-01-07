@@ -13,6 +13,12 @@ symbol = " "
 [dart]
 symbol = " "
 
+[jobs]
+disabled = true
+
+[os]
+disabled = false
+
 [directory]
 read_only = " 󰌾"
 
