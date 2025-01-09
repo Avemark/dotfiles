@@ -22,3 +22,8 @@ waybar = "~/.config/waybar"
 [waybar.variables]
 laptop = false
 
+[eww.files]
+eww = "~/.config/eww"
+
+[swaync.files]
+swaync = "~/.config/swaync"

@@ -1,0 +1,11 @@
+(defwindow example
+           :monitor 0
+           :geometry (geometry :x "40%"
+                               :y "5%"
+                               :width "10%"
+                               :height "30px"
+                               :anchor "top left")
+           :stacking "fg"
+           :exclusive false
+           :focusable "ondemand"
+  (systray :icon-size 21))
