@@ -1,0 +1,8 @@
+packages = ["fish", "hyprland", "swaync"]
+
+[variables]
+laptop = true
+
+[files]
+"flutterby/monitor.conf" = "~/.config/hypr/conf/monitor.conf"
+"flutterby/hyprpaper.conf" = "~/.config/hypr/conf/hyprpaper.conf"
