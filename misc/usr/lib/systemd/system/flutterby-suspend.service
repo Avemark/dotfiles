@@ -1,0 +1,12 @@
+[Unit]
+Description=Lock sessions
+Before=sleep.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/logger -t suspend -s "flutterby-suspend.service"
+ExecStart=/usr/bin/loginctl lock-sessions
+ExecStart=/usr/bin/sleep 1
+
+[Install]
+WantedBy=sleep.target
