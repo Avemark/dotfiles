@@ -30,3 +30,6 @@ swaync = "~/.config/swaync"
 
 [swayimg.files]
 swayimg = "~/.config/swayimg"
+
+[mimeapps.files]
+"mimeapps.list" = "~/.config/mimeapps.list"

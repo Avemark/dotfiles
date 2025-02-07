@@ -1,4 +1,4 @@
-packages = ["fish", "hyprland", "eww", "swaync", "swayimg"]
+packages = ["fish", "hyprland", "eww", "swaync", "swayimg", "mimeapps"]
 
 [variables]
 laptop = false
