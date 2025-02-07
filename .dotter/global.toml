@@ -27,3 +27,6 @@ eww = "~/.config/eww"
 
 [swaync.files]
 swaync = "~/.config/swaync"
+
+[swayimg.files]
+swayimg = "~/.config/swayimg"
