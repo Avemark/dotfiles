@@ -48,8 +48,8 @@
     "format-source": "",
     "format-source-muted": " ",
     "format-icons": {
-      "hands-free": "",
-      "headset": "",
+      "hands-free": "handsfreereplaceme",
+      "headset": "",
       "phone": "",
       "portable": "",
       "car": "",
