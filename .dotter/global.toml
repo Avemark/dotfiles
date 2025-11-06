@@ -33,3 +33,6 @@ swayimg = "~/.config/swayimg"
 
 [mimeapps.files]
 "mimeapps.list" = "~/.config/mimeapps.list"
+
+[zed.files]
+"zed" = "~/.config/zed"

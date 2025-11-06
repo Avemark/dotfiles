@@ -1,4 +1,4 @@
-packages = ["fish", "hyprland", "swaync"]
+packages = ["fish", "hyprland", "swaync", "zed"]
 
 [variables]
 laptop = true
