@@ -1,1 +1,0 @@
-eval (~/code/hemnet/hemnet-terminal-command/bin/hemnet init - fish)
