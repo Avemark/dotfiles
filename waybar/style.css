@@ -1,13 +1,13 @@
 /*
- * __        __          _                  ____  _         _       
- * \ \      / /_ _ _   _| |__   __ _ _ __  / ___|| |_ _   _| | ___  
- *  \ \ /\ / / _` | | | | '_ \ / _` | '__| \___ \| __| | | | |/ _ \ 
- *   \ V  V / (_| | |_| | |_) | (_| | |     ___) | |_| |_| | |  __/ 
- *    \_/\_/ \__,_|\__, |_.__/ \__,_|_|    |____/ \__|\__, |_|\___| 
- *                 |___/                              |___/         
- *  
- * by Stephan Raabe (2024) 
- * ----------------------------------------------------- 
+ * __        __          _                  ____  _         _
+ * \ \      / /_ _ _   _| |__   __ _ _ __  / ___|| |_ _   _| | ___
+ *  \ \ /\ / / _` | | | | '_ \ / _` | '__| \___ \| __| | | | |/ _ \
+ *   \ V  V / (_| | |_| | |_) | (_| | |     ___) | |_| |_| | |  __/
+ *    \_/\_/ \__,_|\__, |_.__/ \__,_|_|    |____/ \__|\__, |_|\___|
+ *                 |___/                              |___/
+ *
+ * by Stephan Raabe (2024)
+ * -----------------------------------------------------
 */
 
 @define-color backgroundlight #FFFFFF;
@@ -21,30 +21,28 @@
 @define-color iconcolor #FFFFFF;
 
 /* -----------------------------------------------------
- * General 
+ * General
  * ----------------------------------------------------- */
 
 * {
-    font-family: "Fira Semibold", FontAwesome;
+    font-family: "CaskaydiaMono Nerd Font";
     border-radius: 15px;
     font-size: 15px;
-    transition: background-color .3s ease-out;
+    transition: background-color 0.3s ease-out;
 }
-
 
 window#waybar {
     background: rgba(26, 27, 38, 0.75);
     color: #c0caf5;
-    transition: background-color .5s;
+    transition: background-color 0.5s;
 }
 
 .modules-left,
 .modules-center,
-.modules-right
-{
-    background: rgba(0, 0, 8, .7);
+.modules-right {
+    background: rgba(0, 0, 8, 0.7);
     margin: 5px 10px;
-    padding: 0 5px;
+    padding: 1px 1px;
     border-radius: 15px;
 }
 .modules-left {
@@ -97,34 +95,34 @@ window#waybar {
     background: rgba(26, 27, 38, 0.9);
 }
 
-
 #workspaces button {
-  background: transparent;
-  font-family:
-    SpaceMono Nerd Font,
-    feather;
-  font-weight: 900;
-  font-size: 13pt;
-  color: #c0caf5;
-  border:none;
-  border-radius: 15px;
+    background: transparent;
+    font-family:
+        SpaceMono Nerd Font,
+        feather;
+    font-weight: 900;
+    font-size: 13pt;
+    color: #c0caf5;
+    border: none;
+    border-radius: 15px;
 }
 
 #workspaces button.active {
-    background: #13131d; 
+    background: #13131d;
 }
 
 #workspaces button:hover {
-  background: #11111b;
-  color: #cdd6f4;
-  box-shadow: none;
+    background: #11111b;
+    color: #cdd6f4;
+    box-shadow: none;
 }
 
 #custom-arch {
     margin-left: 5px;
+    margin-right: 5px;
     padding: 0 10px;
     font-size: 25px;
-    transition: color .5s;
+    transition: color 0.5s;
 }
 #custom-arch:hover {
     color: #1793d1;

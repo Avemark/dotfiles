@@ -1,7 +1,7 @@
 {
     "include": [
         "~/.config/waybar/modules.json"
-    ],    
+    ],
     "modules-left": [
 	"hyprland/workspaces"
     ],
@@ -9,9 +9,9 @@
         "clock"
     ],
     "modules-right": [
-        {{ #if laptop }} "battery", {{ /if }} 
         "tray",
-        "pulseaudio", 
+        {{ #if laptop }} "battery", {{ /if }}
+        "pulseaudio",
 	"idle_inhibitor",
         "custom/exit"
     ]
