@@ -13,3 +13,5 @@ set fish_greeting
 set -x EDITOR vim
 
 set -x PATH .git/safe/../../bin $PATH
+# Created by `pipx` on 2025-09-03 14:06:28
+set PATH $PATH /home/avis/.local/bin
