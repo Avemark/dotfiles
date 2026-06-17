@@ -36,3 +36,11 @@ swayimg = "~/.config/swayimg"
 
 [zed.files]
 "zed" = "~/.config/zed"
+
+[sysctl.files]
+"sysctl" = "/etc/sysctl.d/"
+
+[zen.files]
+"applications/zen.desktop" = "~/.local/share/applications/zen.desktop"
+"applications/zen-me.desktop" = "~/.local/share/applications/zen-me.desktop"
+"applications/zen-deploy.desktop" = "~/.local/share/applications/zen-deploy.desktop"

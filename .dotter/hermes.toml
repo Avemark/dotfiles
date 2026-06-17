@@ -1,8 +1,8 @@
-packages = ["fish", "hyprland", "swaync", "zed"]
+packages = ["fish", "hyprland", "swaync", "zed", "zen"]
 
 [variables]
 laptop = true
 
 [files]
-"flutterby/monitor.conf" = "~/.config/hypr/conf/monitor.conf"
+"hermes/monitor.conf" = "~/.config/hypr/conf/monitor.conf"
 "flutterby/hyprpaper.conf" = "~/.config/hypr/hyprpaper.conf"

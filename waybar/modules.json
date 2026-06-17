@@ -10,6 +10,12 @@
       "default": ""
     }
   },
+  "custom/performance_profile": {
+    "format": "  {text} ",
+    "exec": "cat /sys/firmware/acpi/platform_profile",
+    //"exec-if": "stat /sys/firmware/acpi/platform_profile 2&> /dev/null",
+    "interval": 1
+  },
 
   "custom/exit": {
     "format": "  ",

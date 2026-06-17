@@ -3,7 +3,8 @@
         "~/.config/waybar/modules.json"
     ],
     "modules-left": [
-	"hyprland/workspaces"
+    	"hyprland/workspaces",
+    	"custom/performance_profile"
     ],
     "modules-center": [
         "clock"
