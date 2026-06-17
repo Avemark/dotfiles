@@ -1,0 +1,53 @@
+-- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Environment-variables/
+-- `env = KEY,VALUE` becomes hl.env("KEY", "VALUE").
+
+-- XDG Desktop Portal
+hl.env("XDG_CURRENT_DESKTOP", "Hyprland")
+hl.env("XDG_SESSION_TYPE", "wayland")
+hl.env("XDG_SESSION_DESKTOP", "Hyprland")
+hl.env("XDG_MENU_PREFIX", "arch-")
+
+-- QT
+hl.env("QT_QPA_PLATFORM", "wayland;xcb")
+hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
+hl.env("QT_WAYLAND_DISABLE_WINDOWDECORATION", "1")
+hl.env("QT_AUTO_SCREEN_SCALE_FACTOR", "1")
+
+-- GTK
+hl.env("GDK_SCALE", "1")
+
+-- video hardware acceleration
+hl.env("VDPAU_DRIVER", "va_gl")
+hl.env("ANV_DEBUG", "video-decode,video-encode")
+
+-- Mozilla
+hl.env("MOZ_ENABLE_WAYLAND", "1")
+
+-- Set the cursor size for xcursor
+hl.env("XCURSOR_SIZE", "24")
+
+-- Disable appimage launcher by default
+hl.env("APPIMAGELAUNCHER_DISABLE", "1")
+
+-- OZONE
+hl.env("OZONE_PLATFORM", "wayland")
+
+-- For KVM virtual machines
+-- hl.env("WLR_NO_HARDWARE_CURSORS", "1")
+-- hl.env("WLR_RENDERER_ALLOW_SOFTWARE", "1")
+
+-- NVIDIA https://wiki.hypr.land/Nvidia/
+hl.env("LIBVA_DRIVER_NAME", "nvidia")
+hl.env("GBM_BACKEND", "nvidia-drm")
+hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
+hl.env("__GL_VRR_ALLOWED", "1")
+hl.env("WLR_DRM_NO_ATOMIC", "1")
+
+-- IBus
+-- hl.env("GTK_IM_MODULE", "wayland")
+-- hl.env("XMODIFIERS", "@im=ibus")
+-- hl.env("QT_IM_MODULES", "wayland;ibus")
+-- hl.env("QT_IM_MODULE", "ibus")
+
+-- fcitx
+hl.env("XMODIFIERS", "@im=fcitx")
