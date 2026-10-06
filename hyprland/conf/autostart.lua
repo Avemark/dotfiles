@@ -1,0 +1,7 @@
+hl.on("hyprland.start", function()
+    hl.exec_cmd("waybar")
+    hl.exec_cmd("hypridle & hyprpaper")
+    hl.exec_cmd("swaync")
+    hl.exec_cmd("systemctl --user start hyprpolkitagent")
+    hl.exec_cmd("gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'")
+end)
