@@ -5,4 +5,5 @@ laptop = true
 
 [files]
 "flutterby/monitor.conf" = "~/.config/hypr/conf/monitor.conf"
+"flutterby/hyprland/hypridle.conf" = "~/.config/hypr/hypridle.conf"
 "flutterby/hyprpaper.conf" = "~/.config/hypr/hyprpaper.conf"

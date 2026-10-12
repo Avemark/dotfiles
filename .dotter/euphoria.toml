@@ -4,6 +4,7 @@ packages = ["fish", "hyprland", "eww", "swaync", "swayimg", "mimeapps", "zed"]
 laptop = false
 
 [files]
+"euphoria/hyprland/hypridle.conf" = "~/.config/hypr/hypridle.conf"
 "euphoria/monitor.lua" = "~/.config/hypr/conf/monitor.lua"
 "euphoria/hyprpaper.conf" = "~/.config/hypr/hyprpaper.conf"
 "euphoria/wireplumber" = "~/.config/wireplumber/wireplumber.conf.d"
