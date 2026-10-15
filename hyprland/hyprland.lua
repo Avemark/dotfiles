@@ -1,4 +1,9 @@
-require("conf/monitor")
+-- Host-specific monitors are deployed by dotter; fall back to a generic default
+if package.searchpath("conf/monitor", package.path) then
+    require("conf/monitor")
+else
+    require("conf/monitor_default")
+end
 require("conf/autostart")
 require("conf/windowrules")
 

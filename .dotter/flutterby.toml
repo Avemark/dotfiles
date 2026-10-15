@@ -4,6 +4,6 @@ packages = ["fish", "hyprland", "swaync", "zed"]
 laptop = true
 
 [files]
-"flutterby/monitor.conf" = "~/.config/hypr/conf/monitor.conf"
+"flutterby/monitor.lua" = "~/.config/hypr/conf/monitor.lua"
 "flutterby/hyprland/hypridle.conf" = "~/.config/hypr/hypridle.conf"
 "flutterby/hyprpaper.conf" = "~/.config/hypr/hyprpaper.conf"
